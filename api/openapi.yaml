@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  title: ZenB Marketplace API
+  version: 1.0.0
+servers:
+  - url: https://api.zenb.in
+paths:
+  /api/auth/signup:
+    post:
+      summary: Sign up with email and password
+  /api/auth/login:
+    post:
+      summary: Login with email and password
+  /api/products:
+    get:
+      summary: List products with filters and sorting
+    post:
+      summary: Create product (seller/admin)
+  /api/orders:
+    post:
+      summary: Create customer order + Razorpay order
+  /api/orders/verify-payment:
+    post:
+      summary: Verify Razorpay payment signature
+  /api/admin/dashboard:
+    get:
+      summary: Admin analytics summary
+  /api/dropship/suppliers/{supplierId}/import:
+    post:
+      summary: Import supplier catalog

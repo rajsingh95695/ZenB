@@ -1,0 +1,18 @@
+{
+  "name": "zenb-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "admin-dashboard",
+    "seller-dashboard"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\" \"npm run dev --workspace admin-dashboard\" \"npm run dev --workspace seller-dashboard\"",
+    "build": "npm run build --workspace backend && npm run build --workspace frontend && npm run build --workspace admin-dashboard && npm run build --workspace seller-dashboard"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

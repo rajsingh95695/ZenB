@@ -1,0 +1,174 @@
+# Streamlit secrets and configuration
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Data files (large files)
+data/
+*.csv
+*.pkl
+*.pickle
+*.model
+*.h5
+*.hdf5
+
+# Reports
+reports/
+*.pdf
+*.docx
+*.xlsx
+
+# Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Docker
+docker-compose.override.yml
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.jupyter/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Project specific
+models/  # Large model files
+data/    # Data files (can be large)
+reports/ # Generated reports
+
+# Secrets - NEVER COMMIT THESE
+secrets.json
+credentials.json
+service-account-key.json
+*.key
+*.pem
+*.crt
+
+# API keys
+api_keys.txt
+config.ini
+settings.ini
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+
+# Compression files
+*.gz
+*.zip
+*.tar
+*.tgz
+
+# Documentation
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Custom
+.project_metadata
